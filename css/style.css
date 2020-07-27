@@ -1,0 +1,360 @@
+/* accent--text-color #2196F3 */
+/* primary-text-color #212121 */
+/* secondary-text-color #757575 */
+/* team-work-text-color #FFFFFF */
+/* footer-primary-text-color #FFFFFF */
+/* footer-secondary-text-color rgba(255, 255, 255, 0.6) */
+/* primary-font-size 14px */
+/* primary-letter-spacing 0.03em */
+
+/* PRIMARY PROPERTY */
+:root {
+  --primary-bg-color: #ffffff;
+  --accent--text-color: #2196f3;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --button-color: #ffffff;
+  --button-bg-color: #2196f3;
+  --portfolio-btn-bg-color: #f5f4fa;
+
+  --primary-font-size: 14px;
+  --primary-letter-spacing: 0.03em;
+}
+
+body {
+  margin: 0;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: var(--primary-font-size);
+  letter-spacing: var(--primary-letter-spacing);
+}
+/* Убрать после создания иконок */
+.icon {
+  display: inline-block;
+  height: 12px;
+  width: 16px;
+  background-color: blue;
+}
+img {
+  display: flex;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1170px;
+}
+
+/* primary button */
+.button {
+  padding-top: 10px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  min-width: 200px;
+  vertical-align: middle;
+
+  border-radius: 4px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: var(--button-color);
+  background-color: var(--button-bg-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  outline: none;
+  border: none;
+}
+
+/* LIST OF LIMITS */
+.list {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+.content-box {
+  display: flex;
+}
+
+/* HEADER PROPERTY */
+/* logo */
+.title {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #000000;
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+.item {
+  color: var(--accent--text-color);
+}
+
+/* navigation menu */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-page .link {
+  display: block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: var(--primary-text-color);
+
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-page .current {
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 2px;
+  border-bottom: 2px solid var(--accent--text-color);
+  color: var(--accent--text-color);
+}
+.header-page .link:hover,
+.header-page .link:focus {
+  color: var(--accent--text-color);
+}
+
+/* contact menu */
+.header-page .contact {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.header-page .btn:not(:last-child) {
+  margin-right: 30px;
+}
+.header-page .btn {
+  display: block;
+  color: var(--secondary-text-color);
+}
+
+/* HERO */
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.hero-title {
+  margin-bottom: 30px;
+  color: #ffffff;
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* SECTION */
+.section {
+  padding-top: 95px;
+  padding-bottom: 95px;
+
+  font-weight: 700;
+  line-height: 1.16;
+}
+
+/* title */
+.section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+}
+.section-subtitle {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.section-text {
+  color: var(--secondary-text-color);
+
+  font-weight: 400;
+  line-height: 1.71;
+}
+
+/* ADVANTAGES */
+.advantages {
+  padding-bottom: 0;
+}
+.advantages-item {
+  width: calc((100% - 30px * 3) / 4);
+}
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages-item:nth-child(4n) {
+  margin-left: 0px;
+}
+
+/* TEAM WORK */
+.work.subtitle {
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-size: var(--primary-font-size);
+  line-height: 1.14;
+  text-transform: uppercase;
+  text-align: center;
+}
+.work-item {
+  width: calc((100% - 30 * 2) / 3);
+}
+.work-item:not(:last-child) {
+  margin-right: 30px;
+}
+.work-item:nth-child(3n) {
+  margin-right: 0px;
+}
+
+/* TEAM */
+.team {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.14;
+  text-align: center;
+  background-color: #f5f4fa;
+}
+
+.team.name {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  background-color: inherit;
+}
+.team.proff {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  color: var(--secondary-text-color);
+  background-color: inherit;
+
+  font-weight: 400;
+}
+
+.team-item {
+  width: calc((100% - 30px * 3) / 4);
+  background-color: #ffffff;
+}
+.team-item:nth-child(4n) {
+  margin-right: 0;
+}
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+.social-list {
+  margin-top: 16px;
+  margin-bottom: 25px;
+  justify-content: center;
+}
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* REGULAR CUSTOMERS */
+.customers-list {
+  justify-content: center;
+}
+.company-icon {
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  background-color: aqua;
+
+  vertical-align: middle;
+}
+.customers-item {
+  width: calk((100% - 30px * 5) / 6);
+}
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+.customers-item:nth-child(6n) {
+  margin-right: 0;
+}
+
+/* FOOTER PAGE */
+.footer-page {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+  color: #ffffff;
+}
+.footer {
+  justify-content: space-between;
+}
+.footer-content {
+  width: calc((100 - 30px * 2) / 3);
+}
+/* .footer-content:not(:last-child) {
+  margin-right: 30px;
+} */
+/* title */
+.footer-page .footer-title {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  color: #ffffff;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.footer-subtitle {
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+/* address */
+.address {
+  color: #ffffff;
+
+  line-height: 1.71;
+  font-style: normal;
+  text-decoration: none;
+}
+
+.address.contact {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
