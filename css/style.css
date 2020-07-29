@@ -21,6 +21,18 @@
   --primary-letter-spacing: 0.03em;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-box-sizing: border-box; /* Нужно для мобильного WebKit */
+  -moz-box-sizing: border-box; /* Нужно для Firefox */
+}
+
 body {
   margin: 0;
   color: var(--primary-text-color);
@@ -156,10 +168,17 @@ img {
 
 /* HERO */
 .hero {
+  margin: 0 auto;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url(../images/portfolio/header.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: rgba(47, 48, 58, 0.8);
 }
 .hero-title {
   margin-bottom: 30px;
