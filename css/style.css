@@ -132,14 +132,12 @@ body {
   letter-spacing: 0.02em;
 }
 .header-page .current {
-  border-bottom-right-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom: 2px solid var(--accent--text-color);
   color: var(--accent--text-color);
 }
 .header-page .link:hover,
 .header-page .link:focus {
   color: var(--accent--text-color);
+  --color5: var(--accent--text-color);
 }
 
 /* contact menu */
@@ -155,7 +153,13 @@ body {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
-.contact .btn::before {
+.contact .button-icon {
+  width: 16px;
+  height: 11.2px;
+  align-self: flex-end;
+}
+
+/* .contact .btn::before {
   display: inline-flex;
   content: '';
   margin-right: 10px;
@@ -172,7 +176,7 @@ body {
 .btn.tel::before {
   height: 16px;
   background-image: url(../images/tel-header.svg);
-}
+} */
 
 /* HERO */
 .hero {
