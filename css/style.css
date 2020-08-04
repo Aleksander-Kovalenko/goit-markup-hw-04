@@ -154,9 +154,8 @@ body {
   text-decoration: none;
 }
 .contact .button-icon {
-  width: 16px;
-  height: 11.2px;
-  align-self: flex-end;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* .contact .btn::before {
