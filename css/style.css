@@ -131,15 +131,22 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+/* .letter:hover {
+  fill: var(--accent--text-color);
+} */
 .header-page .current {
   color: var(--accent--text-color);
 }
+.icon:hover .letter,
 .header-page .link:hover,
 .header-page .link:focus {
   color: var(--accent--text-color);
-  --color5: var(--accent--text-color);
+  fill: var(--accent--text-color);
 }
-
+.icon .lette {
+  fill: currentColor;
+}
 /* contact menu */
 .header-page .contact {
   display: flex;
@@ -165,14 +172,14 @@ body {
   width: 16px;
   vertical-align: middle;
   background-repeat: no-repeat;
-}
+} */
 
-.btn.mail::before {
+/* .btn.mail::before {
   height: 11px;
   background-image: url(../images/post-header.svg);
-}
+} */
 
-.btn.tel::before {
+/* .btn.tel::before {
   height: 16px;
   background-image: url(../images/tel-header.svg);
 } */
@@ -242,36 +249,18 @@ body {
   display: block;
   flex: 1;
 }
-.common-icon {
+.general-icon {
   display: flex;
   justify-content: center;
+}
+.common-icon {
   align-items: center;
   height: 120px;
   background-color: #f5f4fa;
-}
 
-/* .advantages-item::before {
-  display: block;
-  content: '';
-  height: 120px;
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
   border-radius: 4px;
 }
-.advantages-item.attention::before {
-  background-image: url(../images/antenna.svg);
-}
 
-.advantages-item.punctuality::before {
-  background-image: url(../images/punctuality.svg);
-}
-.advantages-item.hight-techn::before {
-  background-image: url(../images/highttechn.svg);
-}
-.advantages-item.plane::before {
-  background-image: url(../images/plane.svg);
-} */
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
