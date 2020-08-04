@@ -122,12 +122,15 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 .header-page .current {
   color: var(--accent--text-color);
 }
+
 .header-page .link:hover,
 .header-page .link:focus {
   color: var(--accent--text-color);
+  --color3: var(--accent--text-color);
 }
 
 /* contact menu */
@@ -143,23 +146,8 @@ body {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
-.contact .btn::before {
-  display: inline-flex;
-  content: '';
-  margin-right: 10px;
-  width: 16px;
-  vertical-align: middle;
-  background-repeat: no-repeat;
-}
-
-.btn.mail::before {
-  height: 11px;
-  background-image: url(../images/post-header.svg);
-}
-
-.btn.tel::before {
-  height: 16px;
-  background-image: url(../images/tel-header.svg);
+.contact .button-icon {
+  margin-right: 7px;
 }
 
 /* FILTER MENU */
@@ -267,43 +255,15 @@ body {
   font-size: 18px;
   line-height: 1.56;
 }
-/* SOCIAL-LIST */
-.social-list {
-  margin-top: 16px;
-  margin-bottom: 25px;
-  justify-content: center;
-}
-.item-link::before {
-  content: '';
-  display: block;
-  height: 44px;
-  width: 44px;
-}
-.social-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.item-link.instagram::before {
-  background-image: url(../images/instagarm.svg);
-}
-.item-link.twitter::before {
-  background-image: url(../images/twitter.svg);
-}
-.item-link.facebook::before {
-  background-image: url(../images/facebook.svg);
-}
-.item-link.linkedin::before {
-  background-image: url(../images/In.svg);
-}
 
 /* FOOTER */
 .footer-page {
-  margin-top: 95px;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
   color: #ffffff;
 }
+
 .footer {
   justify-content: space-between;
 }
@@ -328,6 +288,21 @@ body {
   text-transform: uppercase;
 }
 
+.footer-icon .icon {
+  --color2: #ffffff;
+  --color1: rgba(255, 255, 255, 0.1);
+}
+.footer-icon:hover .icon {
+  --color1: var(--accent--text-color);
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.button .icon {
+  text-align: center;
+}
 /* address */
 .address {
   color: #ffffff;
@@ -340,15 +315,4 @@ body {
 .address.contact {
   margin-top: 10px;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.button.icon::after {
-  display: inline-block;
-  content: '';
-  height: 24px;
-  width: 24px;
-  background-image: url(../images/lita.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  vertical-align: middle;
 }

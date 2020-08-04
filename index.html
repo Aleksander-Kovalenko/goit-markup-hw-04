@@ -48,38 +48,14 @@
         </nav>
         <div class="contact">
           <a class="btn mail link" href="mailto:info@devstudio.com">
-            <svg
-              width="16"
-              height="12"
-              viewBox="0 0 16 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M14.5 0H1.50001C0.672854 0 0 0.628107 0 1.40026V9.80173C0 10.5739 0.672854 11.202 1.50001 11.202H14.5C15.3271 11.202 16 10.5739 16 9.80173V1.40026C16 0.628107 15.3271 0 14.5 0ZM14.5 0.933493C14.5679 0.933493 14.6325 0.94665 14.6916 0.969628L8 6.38361L1.30833 0.969628C1.36742 0.946681 1.43204 0.933493 1.49998 0.933493H14.5ZM14.5 10.2685H1.50001C1.22414 10.2685 0.999996 10.0593 0.999996 9.80169V1.95587L7.67236 7.35402C7.76661 7.43013 7.8833 7.46798 8 7.46798C8.1167 7.46798 8.23339 7.43016 8.32764 7.35402L15 1.95587V9.80173C15 10.0593 14.7759 10.2685 14.5 10.2685Z"
-                fill="#757575"
-              />
+            <svg class="button-icon" width="16" height="11">
+              <use href="./images/sprite.svg#icon-post-header"></use>
             </svg>
             info@devstudio.com
           </a>
           <a class="btn tel link" href="tel:+380961111111">
-            <svg
-              class="icon"
-              width="10"
-              height="15"
-              viewBox="0 0 10 15"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                class="letter"
-                d="M8.5 0H1.5C0.672848 0 0 0.628103 0 1.40025V13.5357C0 14.3079 0.672848 14.936 1.5 14.936H8.5C9.32715 14.936 10 14.3079 10 13.5357V1.40025C10 0.628103 9.32715 0 8.5 0ZM1.5 0.933498H8.5C8.77588 0.933498 9 1.14271 9 1.40025V11.202H1V1.40025C1 1.14271 1.22412 0.933498 1.5 0.933498ZM8.5 14.0025H1.5C1.22412 14.0025 1 13.7933 1 13.5357V12.1355H9V13.5357C9 13.7933 8.77588 14.0025 8.5 14.0025Z"
-                fill="#757575"
-              />
-              <path
-                d="M2.35355 12.7389C2.54882 12.9213 2.54882 13.2169 2.35355 13.3992C2.15828 13.5816 1.84172 13.5816 1.64645 13.3992C1.45118 13.2169 1.45118 12.9213 1.64645 12.7389C1.84172 12.5566 2.15828 12.5566 2.35355 12.7389Z"
-                fill="#757575"
-              />
+            <svg class="button-icon" width="10" height="15">
+              <use href="./images/sprite.svg#icon-tel-header"></use>
             </svg>
             +38 096 111 11 11
           </a>
@@ -188,6 +164,7 @@
               <h3 class="team name">Николай Кучеренко</h3>
               <p class="team proff">Product Designer</p>
 
+              <!-- Social-list -->
               <ul class="content-box social-list list">
                 <li class="social-item">
                   <a
@@ -195,7 +172,13 @@
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-instagarm"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -203,7 +186,13 @@
                     href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -211,7 +200,13 @@
                     href="https://www.facebook.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -219,7 +214,13 @@
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-In"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -229,6 +230,8 @@
               <img src="./images/olga.jpg" alt="olga-ivanova" />
               <h3 class="team name">Ольга Иванова</h3>
               <p class="team proff">Frontend Developer</p>
+
+              <!-- Social-list -->
               <ul class="content-box social-list list">
                 <li class="social-item">
                   <a
@@ -236,7 +239,13 @@
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-instagarm"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -244,7 +253,13 @@
                     href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -252,7 +267,13 @@
                     href="https://www.facebook.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -260,7 +281,13 @@
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-In"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -270,6 +297,8 @@
               <img src="./images/andrey.jpg" alt="andrey-shevchenko" />
               <h3 class="team name">Андрей Шевченко</h3>
               <p class="team proff">Marketing</p>
+
+              <!-- Social-list -->
               <ul class="content-box social-list list">
                 <li class="social-item">
                   <a
@@ -277,7 +306,13 @@
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-instagarm"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -285,7 +320,13 @@
                     href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -293,7 +334,13 @@
                     href="https://www.facebook.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -301,7 +348,13 @@
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-In"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -311,6 +364,8 @@
               <img src="./images/ivan.jpg" alt="ivan-nikolaev" />
               <h3 class="team name">Иван Николаев</h3>
               <p class="team proff">UI Designer</p>
+
+              <!-- Social-list -->
               <ul class="content-box social-list list">
                 <li class="social-item">
                   <a
@@ -318,7 +373,13 @@
                     href="https://www.instagram.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-instagarm"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -326,7 +387,13 @@
                     href="https://twitter.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -334,7 +401,13 @@
                     href="https://www.facebook.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
                 <li class="social-item">
                   <a
@@ -342,7 +415,13 @@
                     href="https://www.linkedin.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                  ></a>
+                  >
+                    <div class="social-icon">
+                      <svg width="44" height="44">
+                        <use href="./images/sprite.svg#icon-In"></use>
+                      </svg>
+                    </div>
+                  </a>
                 </li>
               </ul>
             </li>
@@ -356,34 +435,58 @@
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="customers-list content-box list">
             <li class="customers-item">
-              <a class="company-link" href=""
-                ><img src="images/yaandco.svg" alt=""
-              /></a>
+              <a class="company-link" href="">
+                <div class="company-icon">
+                  <svg class="icon" width="44" height="50">
+                    <use href="./images/sprite.svg#icon-yaandco"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
             <li class="customers-item">
-              <a class="company-link" href=""
-                ><img src="./images/taglin.svg" alt=""
-              /></a>
+              <a class="company-link" href="">
+                <div class="company-icon">
+                  <svg class="icon" width="44" height="50">
+                    <use href="./images/sprite.svg#icon-taglin"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
             <li class="customers-item">
-              <a class="company-link" href=""
-                ><img src="./images/company.svg" alt=""
-              /></a>
+              <a class="company-link" href="">
+                <div class="company-icon">
+                  <svg class="icon" width="44" height="50">
+                    <use href="./images/sprite.svg#icon-logo-2"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
             <li class="customers-item">
-              <a class="company-link" href=""
-                ><img src="./images/foster.svg" alt=""
-              /></a>
+              <a class="company-link" href="">
+                <div class="company-icon">
+                  <svg class="icon" width="80" height="42">
+                    <use href="./images/sprite.svg#icon-logo-4"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
             <li class="customers-item">
-              <a class="company-link" href=""
-                ><img src="./images/brand.svg" alt=""
-              /></a>
+              <a class="company-link" href="">
+                <div class="company-icon">
+                  <svg class="icon" width="80" height="42">
+                    <use href="./images/sprite.svg#icon-brand"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
             <li class="customers-item">
-              <a class="company-link" href=""
-                ><img src="./images/comtag.svg" alt=""
-              /></a>
+              <a class="company-link" href="">
+                <div class="company-icon">
+                  <svg class="icon" width="80" height="42">
+                    <use href="./images/sprite.svg#icon-logo-6"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -418,18 +521,40 @@
           <h3 class="footer-subtitle">Присоединяйтесь</h3>
           <ul class="content-box social-list list">
             <li class="social-item">
-              <a href=""
-                ><img src="./images/instagarm.svg" alt="instagram"
-              /></a>
+              <a href="">
+                <div class="footer-icon">
+                  <svg class="icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-instagarm"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
             <li class="social-item">
-              <a href=""><img src="./images/twitter.svg" alt="twitter" /></a>
+              <a href="">
+                <div class="footer-icon">
+                  <svg class="icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
             <li class="social-item">
-              <a href=""><img src="./images/facebook.svg" alt="facebook" /></a>
+              <a href="">
+                <div class="footer-icon">
+                  <svg class="icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
             <li class="social-item">
-              <a href=""><img src="./images/In.svg" alt="In" /></a>
+              <a href="">
+                <div class="footer-icon">
+                  <svg class="icon" width="44" height="44">
+                    <use href="./images/sprite.svg#icon-In"></use>
+                  </svg>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -437,8 +562,11 @@
         <div class="footer-content">
           <h3 class="footer-subtitle">Подпишись на рассылку</h3>
           <input value="E-mail" />
-          <button class="button icon">
+          <button class="button">
             Подписаться
+            <svg class="icon" height="24" width="24">
+              <use href="./images/sprite.svg#icon-lita"></use>
+            </svg>
           </button>
         </div>
       </div>
