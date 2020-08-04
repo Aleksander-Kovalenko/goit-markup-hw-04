@@ -242,8 +242,15 @@ body {
   display: block;
   flex: 1;
 }
+.common-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: #f5f4fa;
+}
 
-.advantages-item::before {
+/* .advantages-item::before {
   display: block;
   content: '';
   height: 120px;
@@ -264,7 +271,7 @@ body {
 }
 .advantages-item.plane::before {
   background-image: url(../images/plane.svg);
-}
+} */
 .advantages-item:not(:last-child) {
   margin-right: 30px;
 }
