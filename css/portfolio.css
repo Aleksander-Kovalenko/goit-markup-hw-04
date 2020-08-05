@@ -212,11 +212,6 @@ body {
 .work-item p {
   display: none;
 }
-.work.item:hover,
-.work-item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
 
 /* SECTION */
 .section {
@@ -228,11 +223,13 @@ body {
   margin-bottom: 4px;
   margin-left: 24px;
 
+  color: #212121;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .section-subtitle {
   margin-top: 0px;
   margin-bottom: 20px;
@@ -317,5 +314,19 @@ body {
 
 .address.contact {
   margin-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.input-post {
+  margin-right: 10px;
+  width: 360px;
+  height: 50px;
+  padding: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  background-color: inherit;
+  border-radius: 4px;
+
+  font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
