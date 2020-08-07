@@ -46,7 +46,7 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  width: 1170px;
+  width: 1200px;
 }
 
 .visually-hidden {
@@ -81,6 +81,15 @@ body {
 
   outline: none;
   border: none;
+}
+
+.button:hover {
+  background-color: #fff;
+  color: var(--accent--text-color);
+}
+
+.button:hover .icon {
+  --color1: var(--accent--text-color);
 }
 
 /* LIST OF LIMITS */
@@ -203,7 +212,7 @@ body {
 
 /* TEAM-WORK */
 .work-item {
-  width: calc((100% - 33px * 2) / 3);
+  float: 1;
   margin-bottom: 30px;
 }
 .work-item:hover {
